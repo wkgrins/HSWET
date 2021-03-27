@@ -2,7 +2,7 @@
 """
 Created on Sat Mar 27 14:51:33 2021
 
-@author: Willa Grinsfelder
+@author: Willa Grinsfelder, Fabrice Ingabire
 """
 # Import relevant modules
 import pandas as pd
@@ -12,11 +12,11 @@ import numpy as np
 #math
 
 # Import logged data from .csv file format as a Pandas dataframe
-obj = pd.read_excel("test.xlsx", index_col='Tim elapsed (ms)')
+# obj = pd.read_excel("test.xlsx", index_col='Tim elapsed (ms)')
 
 
 # Import Manually Logged Wind Tunnel Data and time stamps
-vals = pd.read_excel("test_speeds.xlsx")
+# vals = pd.read_excel("test_speeds.xlsx")
 
 # Calculate wind speed from motor RPMS
 # Eq'n: Wind speed (m/s) = 0.0021*motor rpms + 0.3346
@@ -31,6 +31,7 @@ obj.iloc[vals.iloc[1,[1]]]
 
 # Write the munged data to a file called munged.csv with commas as data delimiters
 
+#### Anything past here is future additions
 # Plot raw data and save the images to the directory
 # Make sub-directory called "raw"
 
